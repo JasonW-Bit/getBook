@@ -62,3 +62,11 @@ logs/
 # 系统文件
 Thumbs.db
 .DS_Store
+
+# Agent 状态（敏感配置不提交，对话历史可提交）
+data/agent_state/*/agent_config.json
+data/agent_state/*/context.pkl
+data/agent_state/*/export.json
+# 对话历史和工作流状态可以提交（不含敏感信息）
+# data/agent_state/*/conversation_history.json
+# data/agent_state/*/workflow_state.json

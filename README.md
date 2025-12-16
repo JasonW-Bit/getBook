@@ -25,6 +25,12 @@
 - ✅ **数据整理**: 自动整理和生成训练数据
 - ✅ **多风格支持**: 支持多种写作风格训练
 
+### 💾 Agent 状态管理
+- ✅ **对话历史保存**: 自动保存所有对话记录
+- ✅ **工作流状态**: 记录工作进度和任务状态
+- ✅ **跨设备同步**: 支持导出/导入状态，在新电脑继续工作
+- ✅ **多会话管理**: 支持多个独立会话
+
 ## 🚀 快速开始
 
 ### 安装依赖
@@ -214,6 +220,52 @@ data/training/novels/
 ### 工具脚本
 - `scrape.sh` - 单本爬取便捷脚本
 - `organize_and_train.sh` - 整理训练便捷脚本
+
+### Agent 状态管理
+- `scripts/core/agent_state_manager.py` - Agent 状态管理器
+- `scripts/core/agent_session.py` - Agent 会话管理器
+- `scripts/restore_agent.py` - 恢复 Agent 状态
+- `scripts/example_agent_usage.py` - 使用示例
+
+## 💾 Agent 状态管理
+
+### 保存对话和工作状态
+
+```python
+from scripts.core.agent_session import AgentSession
+
+# 创建会话
+session = AgentSession(session_name="my_work")
+
+# 开始任务（自动保存）
+session.start_task("优化代码结构")
+
+# 记录对话（自动保存）
+session.add_user_message("检查代码")
+session.add_assistant_message("正在检查...")
+
+# 导出状态（用于迁移到其他电脑）
+export_path = session.export_session()
+```
+
+### 在新电脑上恢复
+
+```bash
+# 1. 克隆项目
+git clone https://github.com/YOUR_USERNAME/getBook.git
+cd getBook
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 恢复 Agent 状态
+python3 scripts/restore_agent.py --import data/agent_state/export.json
+
+# 4. 继续工作
+python3 scripts/example_agent_usage.py
+```
+
+详细文档：[docs/AGENT_STATE_MANAGEMENT.md](docs/AGENT_STATE_MANAGEMENT.md)
 
 ## ⚙️ 配置
 
