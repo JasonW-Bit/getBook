@@ -1,0 +1,70 @@
+{
+  "export_time": "2025-12-16T11:05:22.150761",
+  "version": "1.0",
+  "conversation_history": [
+    {
+      "role": "system",
+      "content": "开始任务: 测试任务：验证 Agent 状态管理",
+      "timestamp": "2025-12-16T11:05:12.152722",
+      "metadata": {
+        "test": true,
+        "timestamp": "2024-12-16"
+      }
+    },
+    {
+      "role": "user",
+      "content": "这是一个测试消息",
+      "timestamp": "2025-12-16T11:05:12.153034",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "收到，正在处理测试",
+      "timestamp": "2025-12-16T11:05:12.153440",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "请保存当前状态",
+      "timestamp": "2025-12-16T11:05:12.153700",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "状态已保存",
+      "timestamp": "2025-12-16T11:05:12.153946",
+      "metadata": {}
+    }
+  ],
+  "agent_config": {},
+  "workflow_state": {
+    "completed_steps": [
+      {
+        "step": "测试步骤1",
+        "status": "completed",
+        "timestamp": "2025-12-16T11:05:12.154196",
+        "details": {
+          "result": "success"
+        }
+      },
+      {
+        "step": "测试步骤2",
+        "status": "in_progress",
+        "timestamp": "2025-12-16T11:05:12.154196",
+        "details": {}
+      }
+    ],
+    "current_step": "测试步骤2",
+    "last_updated": "2025-12-16T11:05:12.154698"
+  },
+  "context": {
+    "current_task": "测试任务：验证 Agent 状态管理",
+    "working_files": [
+      "pipeline.py",
+      "train_model.py"
+    ],
+    "project_context": {},
+    "session_name": "test_session",
+    "last_updated": "2025-12-16T11:05:12.154196"
+  }
+}

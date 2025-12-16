@@ -1,0 +1,32 @@
+[
+  {
+    "role": "system",
+    "content": "开始任务: 最终测试任务",
+    "timestamp": "2025-12-16T11:06:11.981576",
+    "metadata": {}
+  },
+  {
+    "role": "user",
+    "content": "这是最终测试",
+    "timestamp": "2025-12-16T11:06:11.981857",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "收到，开始最终测试",
+    "timestamp": "2025-12-16T11:06:11.982183",
+    "metadata": {}
+  },
+  {
+    "role": "user",
+    "content": "继续之前的工作",
+    "timestamp": "2025-12-16T11:06:11.984105",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "好的，继续处理",
+    "timestamp": "2025-12-16T11:06:11.984453",
+    "metadata": {}
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "completed_steps": [
+    {
+      "step": "测试步骤1",
+      "status": "completed",
+      "timestamp": "2025-12-16T11:05:12.154196",
+      "details": {
+        "result": "success"
+      }
+    },
+    {
+      "step": "测试步骤2",
+      "status": "in_progress",
+      "timestamp": "2025-12-16T11:05:12.154196",
+      "details": {}
+    }
+  ],
+  "current_step": "测试步骤2",
+  "last_updated": "2025-12-16T11:05:12.154698"
+}
