@@ -15,8 +15,8 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from scripts.core.agent_state_manager import AgentStateManager
-from scripts.core.agent_session import AgentSession
+from core.agent_state_manager import AgentStateManager
+from core.agent_session import AgentSession
 
 
 def restore_agent_state(export_file: str = None, state_dir: str = "data/agent_state"):
