@@ -67,6 +67,8 @@ Thumbs.db
 data/agent_state/*/agent_config.json
 data/agent_state/*/context.pkl
 data/agent_state/*/export.json
+data/agent_state/test_*/  # 测试会话
+data/agent_state/*_test*/  # 测试导出文件
 # 对话历史和工作流状态可以提交（不含敏感信息）
 # data/agent_state/*/conversation_history.json
 # data/agent_state/*/workflow_state.json
