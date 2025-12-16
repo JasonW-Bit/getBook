@@ -1,0 +1,31 @@
+{
+  "m.shuhaige.net": {
+    "url": "https://m.shuhaige.net",
+    "adapter": "m.shuhaige.net",
+    "status": "ready",
+    "categories": []
+  },
+  "ixdzs8.com": {
+    "url": "https://ixdzs8.com",
+    "adapter": "ixdzs8.com",
+    "status": "ready",
+    "categories": [
+      "都市",
+      "玄幻",
+      "武侠",
+      "修真",
+      "军事",
+      "历史",
+      "网游",
+      "竞技",
+      "科幻",
+      "灵异",
+      "言情",
+      "穿越",
+      "耽美",
+      "同人",
+      "台言",
+      "古言"
+    ]
+  }
+}

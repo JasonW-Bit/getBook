@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# 数据文件
+data/training/novels/
+data/training/processed/
+novels/
+rewritten/
+# 注意：保留配置文件，排除训练数据
+# data/training/*.txt
+# data/training/*.json
+
+# 模型文件（大文件，不应上传）
+models/checkpoints/
+models/text_rewriter/
+models/text_rewriter_model/*.h5
+models/text_rewriter_model/vocab.json
+models/pretrained/
+*.h5
+*.ckpt
+*.pb
+*.pth
+*.pt
+
+# 临时文件
+*.tmp
+*.log
+*.swp
+*~
+.DS_Store
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+.cursor/
+
+# 进度文件
+*_progress.json
+
+# Python 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# 日志文件
+*.log
+logs/
+/tmp/workflow_*.log
+/tmp/auto_execute*.log
+/tmp/full_workflow*.log
+
+# 系统文件
+Thumbs.db
+.DS_Store
